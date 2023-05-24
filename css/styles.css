@@ -1,0 +1,172 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+/*-------TIPOGRAFIA------*/
+@font-face {
+    font-family: "CreteRound-Regular";
+    src: url("../Fonts/CreteRound-Regular.otf"); /*TITULO*/
+}
+@font-face {
+    font-family: "SF_Collegiate_Solid";
+    src: url("../Fonts/SF_Collegiate_Solid.ttf"); /*SUB-TITULO*/
+}
+@font-face {
+    font-family: "Walkway_Oblique_Bold";
+    src: url("../Fonts/Walkway_Bold.ttf"); /*TEXTO importante de la pagina*/
+}
+/*-------Barra de Menu-------*/
+ 
+header {
+    background-color: #a5c0dd;
+}
+.nav-item {
+    background-color: #AFD3E2;
+}
+.lgoauto {
+    height: 100px;
+    width: auto;
+}
+.nav-link {
+    font-family: "SF_Collegiate_Solid";
+    text-transform: uppercase;
+    list-style-type: none;
+    color: black;                
+}
+.nav-link:hover {
+    color: #fff 
+}
+/* ----------- INICIO ----------- */ 
+/*---- GRILLA OFERTAS DESTACADAS ----*/
+body {
+    background-color:  #146C94;
+}
+/*------Contenedor Caja Padre Grid------*/
+.columnaGridPrincipal {
+    display: grid;
+    width: 80%;
+    height: 800px;
+    justify-content: center;
+
+    grid-template-columns: 30% 15% 30% 15%;
+    grid-template-rows: 100px 450px 200px;  
+    
+    grid-template-areas:
+    
+    "tituloGrilla tituloGrilla tituloGrilla tituloGrilla "
+    "contenedorFoto1 contenedorImagenes contenedorFoto2 contenedorImagenes2"
+    "contenedorTextoAuto contenedorTextoAuto contenedorTextoAuto2 contenedorTextoAuto2";
+}
+/*-----Cajas Hijas Grilla----*/
+.tituloGrilla {
+    grid-area: tituloGrilla;
+    background-color: #025464;
+
+}
+.contenedorFoto1 {
+    grid-area: contenedorFoto1;
+}
+.contenedorImagenes {
+    grid-area: contenedorImagenes;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+} 
+.contenedorFoto2 {
+    grid-area: contenedorFoto2;
+}
+.contenedorImagenes2 {
+    grid-area: contenedorImagenes2;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}  
+.centrado {
+    /* COMBINANDO GRID CON FLEXBOX */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "SF_Collegiate_Solid";
+    letter-spacing: 5px; 
+}
+.columnaGridPrincipal {
+    border-color: 2px solid red;
+    height: 600px;
+    width: auto;
+    justify-content: center;
+}
+.cocheGrande {
+    display: flex;
+    height: 400px;
+    width: auto;
+}
+.cocheChico {
+    display: flex;
+    height: 200px;
+    width: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+/*---- Grilla Descripcion AUTOS ---- */
+.contenedorTextoAuto {
+    grid-area: contenedorTextoAuto;
+    width: auto;
+    height: 200px;
+    background-color: black;
+    color: #fff;
+    border: 5px solid red;
+}
+.listaDestacada {
+    display: flex;
+    height: auto;
+    width: auto;
+    flex-direction: column;
+    flex-wrap: wrap ;
+}
+.contenedorTextoAuto2 {
+    grid-area: contenedorTextoAuto2;
+    width: auto;
+    height: auto;
+    background-color: black;
+    color: #fff;
+    border: 5px solid red;
+}
+
+/*----- ENLACE CLIENTES ----- */
+.tituloclientes , .titulocompra{
+    font-family: "SF_Collegiate_Solid";
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    background-color: #025464;
+    color: #fff;
+    margin: 0;
+    letter-spacing: 5px;
+    font-family: "SF_Collegiate_Solid";
+}
+
+.cajaFlexClientes {
+    width: 100%;
+    height: 900px;
+    background-color: #025464;
+    padding: 10px;
+    display: flex;
+
+    flex-flow: column wrap;
+
+     justify-content: space-evenly; 
+}
+
+.fotoClientes{
+    width: 270px;
+    height: auto;
+    background-color: #537188;
+    padding: 10px;
+    margin: 1px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/* ----- ENLACE COMPRA ----- */
